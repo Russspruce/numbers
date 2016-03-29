@@ -6,10 +6,28 @@ $(function() {
     var countTo =parseInt($("#countTo").val());
     var countBy =parseInt($("#countBy").val());
 
-    for (var index = countBy; index <= countTo; index += countBy) {
-      $("#result").append("<li>"+index+"</li> ");
-    }
+    // if (countTo >= 0)  {
+
+      for (var index = countBy; index <= countTo; index += countBy) {
+        $("#result").append("<li>"+index+"</li> ");
+        console.log('made it');
+      }
+    // }
+    // else if (countBy >= 0 ) {
+    //
+    //   for (var index = countBy; index <= countTo; index += countBy) {
+    //     $("#result").append("<li>"+index+"</li> ");
+    //     console.log('made it');
+    //   }
+    // }
+    //
+    // else{
+    //   console.log("darn");
+    //   alert("ERR0R");
+    // }
 
   });
+
+
 
 });
